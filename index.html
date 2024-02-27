@@ -3,49 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>feliz cuento</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mi Página</title>
+    <style>
+        /* Estilos CSS */
+        /* Aquí puedes agregar estilos para personalizar el aspecto de tu página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Mi Página Web</h1>
+        <h1>Mi Página</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cuento">Cuentos</a></li>
+                <li><a href="#poema">Poemas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#informacion">Información</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Contenido de la Página</h2>
-        <!-- Tu contenido va aquí -->
+
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <!-- Aquí puedes agregar contenido para la sección de inicio -->
     </section>
+
+    <section id="cuento">
+        <h2>Cuentos</h2>
+        <!-- Aquí puedes agregar tus cuentos -->
+    </section>
+
+    <section id="poema">
+        <h2>Poemas</h2>
+        <!-- Aquí puedes agregar tus poemas -->
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <!-- Aquí puedes agregar un formulario de contacto u otra información de contacto -->
+    </section>
+
+    <section id="informacion">
+        <h2>Información</h2>
+        <!-- Aquí puedes agregar información sobre ti o cualquier otro contenido que desees -->
+    </section>
+
     <footer>
-        <p>Derechos de autor © 2024 Mi Página Web</p>
+        <!-- Aquí puedes agregar contenido para el pie de página si lo deseas -->
     </footer>
-
-    <div id="seccion1" style="height: 500px; background-color: lightblue;">
-        <h2>Sección 1</h2>
-        <p>Contenido de la Sección 1...</p>
-    </div>
-
-    <div id="seccion2" style="height: 500px; background-color: lightgreen;">
-        <h2>Sección 2</h2>
-        <p>Contenido de la Sección 2...</p>
-    </div>
-
-    <script>
-        function irASeccion2() {
-            var seccion2 = document.getElementById("seccion2");
-            var posicionSeccion2 = seccion2.offsetTop;
-
-            window.scrollTo({
-                top: posicionSeccion2,
-                behavior: 'smooth'
-            });
-        }
-    </script>
 </body>
 </html>
