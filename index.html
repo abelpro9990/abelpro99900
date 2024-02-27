@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,5 +25,27 @@
     <footer>
         <p>Derechos de autor © 2024 Mi Página Web</p>
     </footer>
+
+    <div id="seccion1" style="height: 500px; background-color: lightblue;">
+        <h2>Sección 1</h2>
+        <p>Contenido de la Sección 1...</p>
+    </div>
+
+    <div id="seccion2" style="height: 500px; background-color: lightgreen;">
+        <h2>Sección 2</h2>
+        <p>Contenido de la Sección 2...</p>
+    </div>
+
+    <script>
+        function irASeccion2() {
+            var seccion2 = document.getElementById("seccion2");
+            var posicionSeccion2 = seccion2.offsetTop;
+
+            window.scrollTo({
+                top: posicionSeccion2,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>
