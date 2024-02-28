@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página</title>
+    <title>CuentoPoet</title>
     <style>
         /* Estilos CSS */
         /* Aquí puedes agregar estilos para personalizar el aspecto de tu página */
@@ -54,11 +54,15 @@
             bottom: 0;
             width: 100%;
         }
+         /* Cambiar el color de fondo de manera gradual al desplazarse hacia abajo */
+         section:nth-child(even) {
+            background-color: #d1c4e9; /* Color de fondo morado claro */
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mi Página</h1>
+        <h1>CuentoPoet</h1>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -81,9 +85,9 @@
     </section>
 
     <section id="poema">
-        <h2>Poemas</h2>
+        <h2>Poemas</h2
+    </section>>
         <!-- Aquí puedes agregar tus poemas -->
-    </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
@@ -98,5 +102,18 @@
     <footer>
         <!-- Aquí puedes agregar contenido para el pie de página si lo deseas -->
     </footer>
+    <script>
+        // Script opcional para cambiar el color de fondo del encabezado al desplazarse hacia abajo
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('header');
+            var scrollPosition = window.scrollY;
+            if (scrollPosition > 100) {
+                header.style.backgroundColor = '#7b1fa2'; // Cambiar a un tono más oscuro de morado
+            } else {
+                header.style.backgroundColor = '#4285f4'; // Volver al color azul original
+            }
+        });
+    </script>
+
 </body>
 </html>
