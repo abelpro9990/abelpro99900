@@ -1,119 +1,80 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CuentoPoet</title>
-    <style>
-        /* Estilos CSS */
-        /* Aquí puedes agregar estilos para personalizar el aspecto de tu página */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-         /* Cambiar el color de fondo de manera gradual al desplazarse hacia abajo */
-         section:nth-child(even) {
-            background-color: #d1c4e9; /* Color de fondo morado claro */
-        }
-    </style>
+    <title>ProgramaYa!</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <h1>CuentoPoet</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#cuento">Cuentos</a></li>
-                <li><a href="#poema">Poemas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#informacion">Información</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <p class="logo">ProgramaYa!</p>
+            <nav>
+                <a href="#somos-proya">Quienes Somos</a>
+                <a href="#nuestros-programas">Nuestros Programas</a>
+                <a href="#caracteristicas">Características</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="inicio">
-        <h2>Inicio</h2>
-        <!-- Aquí puedes agregar contenido para la sección de inicio -->
+    <section id="hero">
+        <h1>Aprendé a Programar <br>con los Mejores</h1>
+        <button>APLICÁ YA!</button>
     </section>
 
-    <section id="cuento">
-        <h2>Cuentos</h2>
-        <!-- Aquí puedes agregar tus cuentos -->
+    <section id="somos-proya">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2>Somos <span class="color-acento">ProgramaYa!</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum accusamus, perspiciatis odio nemo minus vel!</p>
+            </div>
+        </div>
     </section>
 
-    <section id="poema">
-        <h2>Poemas</h2
-    </section>>
-        <!-- Aquí puedes agregar tus poemas -->
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <!-- Aquí puedes agregar un formulario de contacto u otra información de contacto -->
+    <section id="nuestros-programas">
+        <div class="container">
+            <h2>Nuestros Programas</h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Programador Front-end</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Programador Full-Stack</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
+                    <button>+ Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Programador Python</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia ducimus veritatis repellendus?</p>
+                    <button>+ Info</button>
+                </div>  
+            </div>
+        </div>
     </section>
 
-    <section id="informacion">
-        <h2>Información</h2>
-        <!-- Aquí puedes agregar información sobre ti o cualquier otro contenido que desees -->
+    <section id="caracteristicas">
+        <div class="container">
+            <ul>
+                <li>✔️ 100% online</li>
+                <li>✔️ Flexibilidad de horarios</li>
+                <li>✔️ Soporte 1:1</li>
+                <li>✔️ Asistencia financiera</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>Listo para programar?</h2>
+        <button>APLICÁ YA!</button>
     </section>
 
     <footer>
-        <!-- Aquí puedes agregar contenido para el pie de página si lo deseas -->
+        <div class="container">
+            <p>&copy; ProgramaYa 2021</p>
+        </div>
     </footer>
-    <script>
-        // Script opcional para cambiar el color de fondo del encabezado al desplazarse hacia abajo
-        window.addEventListener('scroll', function() {
-            var header = document.querySelector('header');
-            var scrollPosition = window.scrollY;
-            if (scrollPosition > 100) {
-                header.style.backgroundColor = '#7b1fa2'; // Cambiar a un tono más oscuro de morado
-            } else {
-                header.style.backgroundColor = '#4285f4'; // Volver al color azul original
-            }
-        });
-    </script>
-
 </body>
 </html>
